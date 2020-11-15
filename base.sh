@@ -103,7 +103,7 @@ function base::check_dependencies() {
 
 # Module-level code
 
-ROOT=$(dirname "$0")
+ROOT=$(dirname "${BASH_SOURCE[0]}")
 JSON="${ROOT}/config.json"
 
 REQS=(
