@@ -17,6 +17,9 @@ title="example.sh for photo-dash-base.sh"
 if [[ -z "${PD+x}" || "$PD" != 0 ]]; then
     echo "You have problems with your configuration. Aborting ${name}." >&2
     exit 1
+elif base::in_quiet_hours; then
+    echo "Currently in quiet hours. Skipping."
+    exit 0
 fi
 
 # The rest of your script goes here, as needed.
