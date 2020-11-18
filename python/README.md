@@ -15,6 +15,8 @@ Clone (and fork) the repository to create modules in Python for `photo-dash`.
 This code is designed around the following:
 
 - Python 3.7+
+    - `pendulum`
+    - `requests`
 
 ## Setup
 
