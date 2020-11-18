@@ -1,4 +1,4 @@
-# base.sh module for photo-dash
+# base.sh module for [photo-dash]
 
 ## Overview
 
@@ -41,5 +41,6 @@ curl -X PUT -H 'Content-Type: application/json' "$ENDPOINT" \
 
 See [LICENSE](../LICENSE) for more detail.
 
+[photo-dash]: https://github.com/cj-wong/photo-dash
 [base.sh]: base.sh
 [example]: example.sh

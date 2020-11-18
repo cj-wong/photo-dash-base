@@ -1,4 +1,4 @@
-# Base modules for photo-dash
+# Base modules for [photo-dash]
 
 ## Overview
 
@@ -10,6 +10,6 @@ Each base module contains documentation on requirements (dependencies) and how t
 
 ## Disclaimer
 
-See [LICENSE](../LICENSE) for more detail.
+See [LICENSE](LICENSE) for more detail.
 
-[photo_dash]: https://github.com/cj-wong/photo-dash
+[photo-dash]: https://github.com/cj-wong/photo-dash

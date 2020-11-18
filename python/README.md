@@ -28,7 +28,7 @@ This code is designed around the following:
 
 See [LICENSE](../LICENSE) for more detail.
 
-[photo_dash]: https://github.com/cj-wong/photo-dash
+[photo-dash]: https://github.com/cj-wong/photo-dash
 [photo_dash_MODULE]: photo_dash_MODULE
 [base.py]: photo_dash_MODULE/base.py
 [config.py]: photo_dash_MODULE/config.py
