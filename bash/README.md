@@ -39,7 +39,7 @@ curl -X PUT -H 'Content-Type: application/json' "$ENDPOINT" \
 
 ## Disclaimer
 
-See [LICENSE](LICENSE) for more detail.
+See [LICENSE](../LICENSE) for more detail.
 
 [base.sh]: base.sh
 [example]: example.sh

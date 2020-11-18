@@ -1,10 +1,10 @@
-# base.py module for photo-dash
+# base.py module for [photo-dash]
 
 ## Overview
 
 The `photo-dash` project is a series of modules and an endpoint. This repository specifically is the base module in Python from which all other Python-based modules should inherit.
 
-Specifically, in [photo_dash_MODULE], both [base.py] and [config.py] are provided barebones. Modules should inherit the base class for universal functionality. Currently, that includes reading quiet hours from the endpoint and checking whether quiet hours is in effect at any specific moment.
+Specifically, in [photo_dash_MODULE], both [base.py] and [config.py] are provided barebones.
 
 ## Usage
 
@@ -26,8 +26,9 @@ This code is designed around the following:
 
 ## Disclaimer
 
-See [LICENSE](LICENSE) for more detail.
+See [LICENSE](../LICENSE) for more detail.
 
+[photo_dash]: https://github.com/cj-wong/photo-dash
 [photo_dash_MODULE]: photo_dash_MODULE
 [base.py]: photo_dash_MODULE/base.py
 [config.py]: photo_dash_MODULE/config.py
