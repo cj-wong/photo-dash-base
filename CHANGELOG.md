@@ -3,9 +3,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## [0.1.1] - 2021-01-05
+This changelog only reflects changes to the project. See [0.1.1].
+
+## [0.1.1] - 2021-03-21
 ### Changed
-- [bash]/[base.sh] now suppresses `curl` output except for errors when retrieving quiet hours.
+- This changelog will now *only* reflect changes to the project as a whole, not to specific implementations' changes.
 
 ## [0.1.0] - 2020-11-18
 ### Added
