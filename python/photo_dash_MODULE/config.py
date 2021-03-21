@@ -8,26 +8,26 @@ _LOGGER_NAME = 'photo-dash-MODULE'
 LOGGER = logging.getLogger(_LOGGER_NAME)
 LOGGER.setLevel(logging.DEBUG)
 
-FH = logging.handlers.RotatingFileHandler(
+_FH = logging.handlers.RotatingFileHandler(
     f'{_LOGGER_NAME}.log',
     maxBytes=40960,
     backupCount=5,
     )
-FH.setLevel(logging.DEBUG)
+_FH.setLevel(logging.DEBUG)
 
-CH = logging.StreamHandler()
-CH.setLevel(logging.WARNING)
+_CH = logging.StreamHandler()
+_CH.setLevel(logging.WARNING)
 
-FORMATTER = logging.Formatter(
+_FORMATTER = logging.Formatter(
     '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     )
-FH.setFormatter(FORMATTER)
-CH.setFormatter(FORMATTER)
+_FH.setFormatter(_FORMATTER)
+_CH.setFormatter(_FORMATTER)
 
-LOGGER.addHandler(FH)
-LOGGER.addHandler(CH)
+LOGGER.addHandler(_FH)
+LOGGER.addHandler(_CH)
 
-CONFIG_LOAD_ERRORS = (
+_CONFIG_LOAD_ERRORS = (
     FileNotFoundError,
     KeyError,
     TypeError,
@@ -42,7 +42,7 @@ try:
     # Module-specific config continues below
     pass
     # Module-specific config ends here
-except CONFIG_LOAD_ERRORS as e:
+except _CONFIG_LOAD_ERRORS as e:
     LOGGER.error('config.json doesn\'t exist or is malformed.')
     LOGGER.error(f'More information: {e}')
     raise e
