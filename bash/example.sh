@@ -14,7 +14,7 @@ root=$(dirname "$0")
 name="photo-dash-EXAMPLE"
 title="example.sh for photo-dash-base.sh"
 
-if [[ -z "${PD+x}" || "$PD" != 0 ]]; then
+if [[ -z "${PD:+x}" || "$PD" != 0 ]]; then
     echo "You have problems with your configuration. Aborting ${name}." >&2
     exit 1
 elif base::in_quiet_hours; then

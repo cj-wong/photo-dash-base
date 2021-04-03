@@ -46,7 +46,7 @@ function base::load_quiet_hours() {
 function base::in_quiet_hours() {
     local hour
     hour=$(date +'%H')
-    if [[ -z "${QUIET_START+x}" || -z "${QUIET_START+x}" ]]; then
+    if [[ -z "${QUIET_START:+x}" || -z "${QUIET_START:+x}" ]]; then
         if [ -f "$QUIET_HOURS" ]; then
             base::load_quiet_hours
         else
